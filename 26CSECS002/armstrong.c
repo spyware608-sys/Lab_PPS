@@ -11,7 +11,7 @@ int main (){
 	do{
 		int x = n%10;
 		c++;
-// write program to do the exponent using for loop 		
+// write program to do the exponent using for loop right here	
 //		y = y + x^c;
 		n = n/10;		
 	}while( n != 0);
