@@ -3,17 +3,15 @@
 int primecheck();
 int main(){
 	int n;
-	printf("enter a number : ");
-	scanf("%d",&n);
-	primecheck( int n; );
+	printf("enter a number : "); scanf("%d",&n);
+	int c= primecheck(n);
+	if (c==0) printf("the number %d is prime",n);
+	else printf("the number %d is not prime",n);
 	return 0;
 }
 int primecheck( int n; ){
-	int i=1 , n;
-	int c=0 ;
+	int i=1 , c=0 , n ;
 	for ( i=2 ; i<=n/2 ; i++)
-	{ if ( n % i == 0 ){ c=c++ ; break; } }
-	if (c==0) printf("the number %d is prime",n);
-	else printf("the number %d is not prime",n);	
-	return 0;
+	{ if ( n % i == 0 ){ c=c++ ; break; } }	
+	return c;
 }
