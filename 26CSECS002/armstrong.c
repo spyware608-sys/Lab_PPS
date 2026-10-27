@@ -5,12 +5,10 @@
 int main (){
 	int n ,n2;
 	printf("enter number n : ");
-	scanf("%d",&n);
-	n2 = n;
+	scanf("%d",&n); n2 = n;
 	int y ,c ,i;
 	do{
-		int x = n%10;
-		c++;
+		int x = n%10; c++;
 // write program to do the exponent using for loop right here	
 //		y = y + x^c;
 		n = n/10;		
